@@ -1,0 +1,21 @@
+/*
+Theme Name: Deveras Simples
+Theme URI: https://marcoandrei.com
+Description: Um tema WordPress sem ornatos ou enfeites, com fins didáticos. 
+Author: Marco Andrei Kichalowsky
+Author URI: https://marcoandrei.com
+Version: 0.1
+License: GNU General Public License v2 or later 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+*/
+
+:root {
+    --letra-corpo-texto: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+    color: #232323;
+    font-family: var(--letra-corpo-texto);
+}
+
+h1, h2, h3, h4, h5 {}

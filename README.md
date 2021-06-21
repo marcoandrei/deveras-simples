@@ -8,4 +8,5 @@ Para além disto, este tema tem fins didáticos e pretende ser um ponto-de-parti
 Fica à vontade para mandar tua sugestão no meu Twitter [@marcoandrei](https://twitter.com/marcoandrei), com a marcação #temaDeverasSimples.
 
 Bom proveito!
-Marco Andrei
+
+_Marco Andrei_

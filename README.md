@@ -5,7 +5,9 @@ Este tema tem por objetivo ser um tema mínimo, mas funcional, que seja composto
 
 Para além disto, este tema tem fins didáticos e pretende ser um ponto-de-partida para programadores que queiram aprender a desenvolver temas para o WordPress.
 
-Fica à vontade para mandar tua sugestão no meu Twitter [@marcoandrei](https://twitter.com/marcoandrei), com a marcação #temaDeverasSimples.
+A versão inicial só reconhece posts do blog, mas pretendo adicionar suporte a páginas, um menu no topo, barra de widgets no rodapé e comentários.
+
+Fica à vontade para mandar tua sugestão no meu Twitter [@marcoandrei](https://twitter.com/marcoandrei), com a marcação #temaDeverasSimples. 
 
 Bom proveito!
 

@@ -17,9 +17,9 @@ if ( ! function_exists( 'prepara_tema' ) ) :
          * Carrega o "text-domain", o que permite que o tema seja traduzido.
          * 
          * Todos os itens traduzíveis de um tema devem ser escritos em Inglês
-         * por força das melhores práticas do WordPress. Este tema tem alguns
-         * itens que podem mudar de acordo com o idioma. Eles estarão escritos
-         * em Inglês e está incluída um arquivo de tradução para PT-BR e PT-PT.
+         * por força das melhores práticas do WordPress. Este tema terá alguns
+         * itens que poderão mudar de acordo com o idioma. Eles estarão escritos
+         * em Inglês, mas vou incluir um arquivo de tradução para PT-BR e PT-PT.
          * 
          *  
          */
@@ -88,15 +88,6 @@ endif;
 
             </div>
 
-            <nav id="navegacao" class="main-navigation">
-                <?php
-                wp_nav_menu(array(
-                    'theme_location' => 'menu-1',
-                    'menu_id'        => 'menu-principal',
-                ));
-                ?>
-            </nav><!-- #site-navigation -->
-
         </div>
 
     </header>
@@ -104,8 +95,6 @@ endif;
     <main class="site-main">
 
         <div class="site-content">
-
-            <div class="coluna-esquerda"></div>
 
             <div class="coluna-central">
 
@@ -119,20 +108,19 @@ endif;
                     <header>
 
                         <?php
-                        if ( 'post' === get_post_type() ) :
-                        ?>
-                        <div class="entry-meta">
-                            <?php the_date(); ?>
-                        </div><!-- .entry-meta -->
-                        <?php endif; ?>
-
-                        <?php
                         if ( is_singular() ) :
                             the_title( '<h1 class="entry-title">', '</h1>' );
                         else :
                             the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
                         endif;
                         ?>
+                        <?php
+                        if ( 'post' === get_post_type() ) :
+                        ?>
+                        <div class="entry-meta">
+                            <?php _e('By', 'deveras-simples'); ?> <?php the_author(); ?> <?php _e('on ', 'deveras-simples'); ?><?php the_date(); ?>
+                        </div><!-- .entry-meta -->
+                        <?php endif; ?>
 
                     </header>
 
@@ -157,8 +145,6 @@ endif;
 
             </div>
 
-            <div class="coluna-direita"></div>
-
         </div>
 
     </main><!-- .site-main -->
@@ -166,9 +152,7 @@ endif;
     <footer id="rodape" class="site-footer">
         <div class="site-footer-info">
             <div class="creditos">
-                Copyright &copy; <?php echo date('Y'); ?>,
-                <?php echo get_bloginfo('name'); ?>.
-                Todos os direitos reservados.
+                <?php echo __('Copyright &copy; ', 'deveras-simples')  .  date('Y') . ', ' . get_bloginfo('name') . '. ' .  __('All rights reserved.', 'deveras-simples'); ?>
             </div>
         </div>
     </footer>

@@ -431,13 +431,48 @@ article.post {
     line-height: 1;
 }
 
+/* Paginação */
+
+.page-numbers {
+    padding-right: 4px;
+}
+
+.page-numbers.current {
+    font-weight: 700;
+}
+
+/* Navegação entre posts */
+
+.post-navigation {
+    padding-top: 1rem;
+}
+
+.post-navigation .nav-links {
+    display: flex;
+    font-size: 0.9rem;
+}
+
+.post-navigation .nav-links>* {
+    flex: 1;
+}
+
+.post-navigation .nav-links .nav-previous {
+    margin-right: 0.25rem;
+    text-align: left;
+}
+
+.post-navigation .nav-links .nav-next {
+    margin-left: 0.25rem;
+    text-align: right;
+}
+
 /*--------------------------------------------------------------
 # Rodapé
 --------------------------------------------------------------*/
 
 .site-footer {
     font-size: 0.75em;
-    margin: 0 auto 1rem;
+    margin: 1rem auto;
     max-width: var(--tamanho-coluna-central);
     text-align: center;
 }

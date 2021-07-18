@@ -121,7 +121,7 @@ endif;
                                 ?>
                         <div class="entry-meta">
                             <?php _e('by', 'deveras-simples'); ?> <?php the_author(); ?>
-                            <?php _e('on ', 'deveras-simples'); ?><?php the_date(); ?>
+                            <?php _e('on', 'deveras-simples'); ?> <?php the_date(); ?>
                         </div><!-- .entry-meta -->
                         <?php endif; ?>
 
@@ -150,9 +150,9 @@ endif;
                                 if (is_singular())
                                     the_post_navigation(
                                         array(
-                                            'prev_text' => __('« %title'),
-                                            'next_text' => __('%title »'),
-                                            'screen_reader_text' => __('Continue Reading'),
+                                            'prev_text' => __('« %title', 'deveras-simples'),
+                                            'next_text' => __('%title »', 'deveras-simples'),
+                                            'screen_reader_text' => __('Continue Reading', 'deveras-simples'),
                                         )
                                     );
                                 ?>
@@ -171,8 +171,9 @@ endif;
                     the_posts_pagination(
                         array(
                             'mid_size' => 2,
-                            'prev_text' => __('« ', 'deveras-simples'),
-                            'next_text' => __(' »', 'deveras-simples'),
+                            'prev_text' => __('«&nbsp;', 'deveras-simples'),
+                            'next_text' => __('&nbsp;»', 'deveras-simples'),
+                            'screen_reader_text' => __('Continue Reading', 'deveras-simples'),
                         )
                     );
 

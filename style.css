@@ -1,12 +1,14 @@
 /*
 Theme Name: Deveras Simples
 Theme URI: https://marcoandrei.com
-Description: Um tema WordPress simples mesmo.
+Description: A really simple WordPress theme.
 Author: Marco Andrei Kichalowsky
 Author URI: https://marcoandrei.com
-Version: 0.1
+Version: 0.2
 License: GNU General Public License v2 or later 
-License URI: http://www.gnu.org/licenses/gpl-2.0.html 
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: deveras-simples
+Domain Path: /languages
 */
 
 /*--------------------------------------------------------------
@@ -425,6 +427,8 @@ article.post {
     margin-bottom: 2rem;
 }
 
+/* Artigos */
+
 .entry-meta {
     color: #777;
     font-size: 0.75rem;
@@ -465,6 +469,14 @@ article.post {
     margin-left: 0.25rem;
     text-align: right;
 }
+
+/*--------------------------------------------------------------
+# Elementos
+--------------------------------------------------------------*/
+
+/* Legenda de imagens */
+
+.wp-block-image figcaption {}
 
 /*--------------------------------------------------------------
 # Rodapé
